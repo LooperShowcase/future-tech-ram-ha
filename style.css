@@ -1,0 +1,71 @@
+h1{
+color: rgb(46, 43, 226);   
+}
+body{
+    background-image: linear-gradient(to left ,rgb(4, 54, 12),rgb(11, 93, 23),rgb(0, 0, 0),hsl(0, 0%,0%));
+  
+  
+      font-family: 'Pacifico', cursive;  
+  
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  
+  
+  
+  tr,table,td{border:6px solid blueviolet; }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(118, 182, 29);
+    }
+  
+    li {
+      float: left;
+    }
+  
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    li a:hover {
+      background-color: rgb(121, 231, 139);
+    }
+  
+   img{
+      height: 30%;
+      width :40%;
+      border-radius:50px;}
+
+     .container{
+      background-color:gray
+       ;align-items: center;
+       border-radius: 30px;
+      display: flex;
+      flex-direction:column ;
+      width: 50%;
+     }
+     button{
+      box-shadow:5px 5px 5px 5px blueviolet;
+      background-color:lime ;
+      color: rgb(255,255,255);
+      padding: 10px;
+    transition: 0.7s; ;
+
+    }
+    button:hover{
+      background-color: cyan;
+      cursor: pointer;
+    }
+  
+    
