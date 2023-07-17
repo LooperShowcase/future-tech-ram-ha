@@ -1,71 +1,113 @@
-h1{
-color: rgb(46, 43, 226);   
+body {
+  background-image: linear-gradient(to left, rgb(4, 54, 12), rgb(11, 93, 23), rgb(0, 0, 0), hsl(0, 0%, 0%));
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Added minimum height to cover the viewport */
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
 }
-body{
-    background-image: linear-gradient(to left ,rgb(4, 54, 12),rgb(11, 93, 23),rgb(0, 0, 0),hsl(0, 0%,0%));
-  
-  
-      font-family: 'Pacifico', cursive;  
-  
-  }
-  .dark-mode {
-    background-color: black;
-    color: white;
-  }
-  
-  
-  
-  
-  
-  tr,table,td{border:6px solid blueviolet; }
-  ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: rgb(118, 182, 29);
-    }
-  
-    li {
-      float: left;
-    }
-  
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-  
-    li a:hover {
-      background-color: rgb(121, 231, 139);
-    }
-  
-   img{
-      height: 30%;
-      width :40%;
-      border-radius:50px;}
 
-     .container{
-      background-color:gray
-       ;align-items: center;
-       border-radius: 30px;
-      display: flex;
-      flex-direction:column ;
-      width: 50%;
-     }
-     button{
-      box-shadow:5px 5px 5px 5px blueviolet;
-      background-color:lime ;
-      color: rgb(255,255,255);
-      padding: 10px;
-    transition: 0.7s; ;
+.container {
+  background-color: gray;
+  align-items: center;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-    }
-    button:hover{
-      background-color: cyan;
-      cursor: pointer;
-    }
+h1 {
+  color: rgb(46, 43, 226);
+  text-align: center;
+  margin-top: 0; /* Added margin to separate from the container */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(118, 182, 29);
+  text-align: center; /* Center the navigation links */
+}
+
+li {
+  display: inline-block; /* Changed from float to inline-block */
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(121, 231, 139);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr,
+td {
+  border: 6px solid blueviolet;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+  max-height: 200px; /* Adjusted the image height */
+}
+
+.container {
+  background-color: gray;
+  align-items: center;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px; /* Added margin for spacing */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+button {
+  box-shadow: 5px 5px 5px 5px blueviolet;
+  background-color: lime;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  transition: 0.7s;
+  width: 100%;
+  margin-top: 10px; /* Added margin for spacing */
+}
+
+button:hover {
+  background-color: cyan;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  /* Mobile responsive styles */
+  body {
+    padding: 20px; /* Added padding to give space around the content */
+  }}
+
+  .container {
+    width: 100%; /* Full width for mobile */
+    border-radius: 0}
+
   
     

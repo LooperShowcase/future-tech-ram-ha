@@ -27,6 +27,7 @@ async function chatAssistantAdd(res){
 
 }
     async function openai_test(){
+
       let url ="https://api.openai.com/v1/chat/completions";
 
 let part1 = "sk";
@@ -34,7 +35,7 @@ let part2 = "-FwTAQ8hQ31W8irBwTpMXT3BlbkFJ";
 let part3 = "tqFgcpK3EZmVIOsoPEKV";
 
 let APIkey = part1 + part2 + part3;
-
+         console.log("hello world ")
 
    let data ={
       model:"gpt-3.5-turbo",
@@ -54,6 +55,8 @@ let APIkey = part1 + part2 + part3;
          const responseData=await response.json();
          const message=responseData.choices[0].message.content;
          chatAssistantAdd(message)
+
+         
       const speech = new SpeechSynthesisUtterance(message);
          speechSynthesis.speak(speech);
          return message;
